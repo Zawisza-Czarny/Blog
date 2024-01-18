@@ -9,12 +9,18 @@
 <body>
 <header>
     <?php include("menu.php"); ?>
-
 </header>
-
-
 <?php include("footer.php"); ?>
-
-
+<?php
+session_start();
+echo ('
+<form action="sprawdz.php" method="post">
+<input type="text" name="tresc" value="');
+if (isset($_SESSION['tresc']))
+echo $_SESSION['tresc'];
+echo('"> <input type="submit" value="Dalej>
+</form>
+');
+?>
 </body>
 </html>

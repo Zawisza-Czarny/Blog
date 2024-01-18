@@ -9,12 +9,13 @@
 <body>
 <header>
     <?php include("menu.php"); ?>
-
 </header>
-
-
 <?php include("footer.php"); ?>
-
-
+<?php
+session_start();
+$_SESSION = array();
+session_destroy();
+?>
+<a href="post.php">Do formularza</a>
 </body>
 </html>

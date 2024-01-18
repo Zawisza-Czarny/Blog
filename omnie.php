@@ -26,31 +26,10 @@ if($_POST){
 </head>
 <body>
 <header>
-    <div class="container">
-        <img src="zdjecia/LOGOSs.png" alt="logo" class="logo">
-
-        <nav>
-            <ul>
-                <li><a href="#">Strona Główna</a></li>
-                <li><a href="omnie.php">Komentarze</a></li>
-                <li><a href="#">Moje Hobby</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">programowanie</a></li>
-                <li><a href="paginacja.php">paginacja</a></li>
-            </ul>
-        </nav>
-    </div>
-
-
-
+    <?php include("menu.php"); ?>
 </header>
 <h1>Zostaw tu swój komentarz</h1>
-<footer>
-    <ul>
-        <li><a href="#">Autor:Mateusz Tomczyk</a> </li>
-    </ul>
-
-</footer>
+<?php include("footer.php"); ?>
 <form action="" method="POST">
 
     <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" /><br >

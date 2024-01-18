@@ -8,32 +8,10 @@
 </head>
 <body>
 <header>
-    <div class="container">
-        <img src="zdjecia/LOGOSs.png" alt="logo" class="logo">
-
-        <nav>
-            <ul>
-                <li><a href="#">Strona Główna</a></li>
-                <li><a href="omnie.php">Komentarze</a></li>
-                <li><a href="#">Moje Hobby</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">programowanie</a></li>
-                <li><a href="paginacja.php">paginacja</a></li>
-            </ul>
-        </nav>
-    </div>
-
-
-
+    <?php include("menu.php"); ?>
 </header>
+<?php include("footer.php"); ?>
 
-
-<footer>
-    <ul>
-        <li><a href="#">Autor:Mateusz Tomczyk</a> </li>
-    </ul>
-
-</footer>
 <?php
 $mysqli = new mysqli('localhost', 'root', '','paginacja');
 if($mysqli->connect_error) {
